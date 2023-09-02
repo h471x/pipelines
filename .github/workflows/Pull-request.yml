@@ -7,14 +7,14 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # runner for the pull request trigger 
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2 # equivalent to git clone inside the runner 
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v2 # use action from git hub 
         with:
           python-version: 3.9.17 # Replace with your desired Python version
 
